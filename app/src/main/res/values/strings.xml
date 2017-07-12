@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bonus</string>
+    <string name="action_settings">Справка</string>
+    <string name="title_activity_main2">ФакторБонус</string>
+    <string name="main_activity">ФакторБонус</string>
+    <string name="cConnect">http://uniweb.factor.ua:8080/droidbonus/connjson?telefon=</string>
+    <string name="cConnecthist">http://uniweb.factor.ua:8080/droidbonus/connjsonhistory?telefon=</string>
+    <string name="cConnectpriz">http://uniweb.factor.ua:8080/droidbonus/connjsonpriz?telefon=</string>
+    <string name="cauthor">Дрогожилов А.С. \nemail: a.drogozhilov@factor.ua</string>
+    <string name="cversion">версия 1.3</string>
+    <string name="title_activity_main3">ФакторБонус</string>
+</resources>

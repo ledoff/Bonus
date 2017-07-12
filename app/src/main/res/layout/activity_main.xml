@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.adrogozhilov.bonus.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="wrap_content"
+        android:layout_height="456dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ожидайте..."
+        android:id="@+id/txtb"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Введите номер телефона"
+            android:id="@+id/txtphone"
+            android:textSize="25dp"
+
+                android:singleLine="false"
+            android:phoneNumber="false"
+                android:layout_below="@+id/txtb"
+                android:layout_centerHorizontal="true" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtbon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:textSize="20dp"
+            android:textColor="#3a2dd1"
+            android:gravity="center_horizontal" />
+
+
+        <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/editText"
+
+             android:textSize="30dp"
+             android:hint="380XXXXXXXXXX"
+             android:inputType="phone"
+            android:layout_below="@+id/txtphone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Проверить бонусы"
+        android:id="@+id/button"
+            android:singleLine="false"
+        android:clickable="true"
+        android:onClick="onClick"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/singin"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="433dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="false"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Движение по карте"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="OnClick2"
+            android:nestedScrollingEnabled="false"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Список призового фонда"
+            android:id="@+id/button3"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:onClick="OnClick3" />
+    </RelativeLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
